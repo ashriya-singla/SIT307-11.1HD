@@ -24,7 +24,7 @@ STUDENT = {
     "name": "Ashriya Singla",
     "id": "225682089",
     "video_url": "[INSERT UNLISTED YOUTUBE LINK]",
-    "code_url": "[INSERT GITHUB / ONEDRIVE LINK]",
+    "code_url": "https://github.com/ashriya-singla/SIT307-11.1HD",
 }
 # ======================================================================
 
