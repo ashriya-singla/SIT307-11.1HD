@@ -1,0 +1,85 @@
+Data audit: {'n_rows': 1025, 'n_features': 13, 'n_unique': 302, 'n_duplicates': 723, 'copies_per_patient': {3: 187, 4: 114, 8: 1}, 'conflicting_label_groups': 0, 'class_counts_full': {0: 499, 1: 526}, 'class_counts_unique': {0: 138, 1: 164}, 'explicit_missing': 0, 'ca_eq_4_rows': 18, 'ca_eq_4_unique': 4, 'thal_eq_0_rows': 7, 'thal_eq_0_unique': 2, 'xgb_backend': 'sklearn HistGradientBoostingClassifier (xgboost not installed)'}
+
+E1 headline (seed 42):
+           Accuracy  Precision  Recall      F1     AUC
+model                                                
+LR          0.7951     0.7563  0.8738  0.8108  0.8787
+NB          0.8000     0.7541  0.8932  0.8178  0.8706
+KNN         0.8341     0.8000  0.8932  0.8440  0.9486
+DT          0.9854     1.0000  0.9709  0.9852  0.9854
+RF          0.9854     1.0000  0.9709  0.9852  1.0000
+XGB         0.9854     1.0000  0.9709  0.9852  0.9903
+Stacking    0.9854     1.0000  0.9709  0.9852  1.0000
+  seed  0 done (5s)
+  seed  1 done (8s)
+  seed  2 done (11s)
+  seed  3 done (13s)
+  seed  4 done (15s)
+  seed  5 done (18s)
+  seed  6 done (20s)
+  seed  7 done (22s)
+  seed  8 done (24s)
+  seed  9 done (26s)
+  seed 10 done (29s)
+  seed 11 done (31s)
+  seed 12 done (34s)
+  seed 13 done (36s)
+  seed 14 done (39s)
+  seed 15 done (41s)
+  seed 16 done (44s)
+  seed 17 done (47s)
+  seed 18 done (49s)
+  seed 19 done (51s)
+  seed 20 done (53s)
+  seed 21 done (56s)
+  seed 22 done (58s)
+  seed 23 done (60s)
+  seed 24 done (62s)
+  seed 25 done (65s)
+  seed 26 done (67s)
+  seed 27 done (70s)
+  seed 28 done (72s)
+  seed 29 done (75s)
+
+E4 leakage:
+           n_seen  n_unseen  correct_seen  correct_unseen  acc_seen  acc_unseen
+model                                                                         
+LR          5971       179          5031             164     0.843       0.916
+NB          5971       179          4914             167     0.823       0.933
+KNN         5971       179          5068             164     0.849       0.916
+DT          5971       179          5971             154     1.000       0.860
+RF          5971       179          5971             167     1.000       0.933
+XGB         5971       179          5971             164     1.000       0.916
+Stacking    5971       179          5971             161     1.000       0.899
+
+E2 leaky 30-seed mean acc:
+ model
+LR          0.8447
+NB          0.8262
+KNN         0.8507
+DT          0.9959
+RF          0.9980
+XGB         0.9976
+Stacking    0.9971
+Name: Accuracy_mean, dtype: float64
+
+E5 dedup 30-seed mean acc:
+ model
+LR          0.8284
+NB          0.8109
+KNN         0.8169
+DT          0.7464
+RF          0.8142
+XGB         0.7891
+Stacking    0.8191
+Name: Accuracy_mean, dtype: float64
+
+E3 meta:
+                   Accuracy      F1     AUC
+meta                                      
+KNN                 0.9927  0.9929  0.9972
+LogReg (default)    0.9971  0.9972  0.9997
+Random Forest       0.9971  0.9972  0.9996
+XGBoost             0.9951  0.9954  0.9998
+
+Part 1 finished in 121s. XGB backend: sklearn HistGradientBoostingClassifier (xgboost not installed)

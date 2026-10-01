@@ -1,0 +1,9 @@
+rep 5/5: ext n=61  LF-DPS final=['LR', 'KNN']  (171s)
+                                 est_Accuracy_mean  ...  optimism_Accuracy_mean
+protocol                                            ...                        
+Paper protocol (paper stacking)             0.9964  ...                  0.1898
+LF protocol (paper stacking)                0.8191  ...                 -0.0301
+LF protocol (LF-DPS)                        0.8357  ...                 -0.0003
+
+[3 rows x 3 columns]
+E6 finished in 171s

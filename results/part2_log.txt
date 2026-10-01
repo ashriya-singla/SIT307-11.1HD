@@ -1,0 +1,16 @@
+fold 23/25  selected=['XGB', 'KNN']  best_single=XGB  A0=0.867 A3=0.850  (35s)
+fold 24/25  selected=['LR', 'RF']  best_single=LR  A0=0.833 A3=0.833  (73s)
+fold 25/25  selected=['KNN', 'NB']  best_single=KNN  A0=0.783 A3=0.850  (110s)
+
+                       Accuracy  Precision  Recall  ...  Specificity     MCC   Brier
+method                                             ...                             
+A0 Paper stacking       0.8245     0.8208  0.8708  ...       0.7697  0.6509  0.1242
+A1 +Typed prep          0.8331     0.8305  0.8756  ...       0.7827  0.6679  0.1201
+A2 +Tuned (6)           0.8338     0.8299  0.8779  ...       0.7812  0.6699  0.1185
+A2b +Tuned+SVM (7)      0.8331     0.8302  0.8755  ...       0.7827  0.6682  0.1187
+A3 LF-DPS (proposed)    0.8384     0.8339  0.8817  ...       0.7869  0.6790  0.1186
+Best single (tuned)     0.8391     0.8260  0.8950  ...       0.7724  0.6796  0.1224
+
+[6 rows x 8 columns]
+
+Part 2 finished in 111s. XGB backend: sklearn HistGradientBoostingClassifier (xgboost not installed)

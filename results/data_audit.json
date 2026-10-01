@@ -1,0 +1,26 @@
+{
+  "n_rows": 1025,
+  "n_features": 13,
+  "n_unique": 302,
+  "n_duplicates": 723,
+  "copies_per_patient": {
+    "3": 187,
+    "4": 114,
+    "8": 1
+  },
+  "conflicting_label_groups": 0,
+  "class_counts_full": {
+    "0": 499,
+    "1": 526
+  },
+  "class_counts_unique": {
+    "0": 138,
+    "1": 164
+  },
+  "explicit_missing": 0,
+  "ca_eq_4_rows": 18,
+  "ca_eq_4_unique": 4,
+  "thal_eq_0_rows": 7,
+  "thal_eq_0_unique": 2,
+  "xgb_backend": "sklearn HistGradientBoostingClassifier (xgboost not installed)"
+}

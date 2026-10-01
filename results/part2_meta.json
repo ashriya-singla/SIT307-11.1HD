@@ -1,0 +1,17 @@
+{
+  "n_folds": 25,
+  "mean_stack_size": 2.08,
+  "min_stack_size": 2,
+  "max_stack_size": 3,
+  "best_single_counts": {
+    "LR": 11,
+    "RF": 5,
+    "SVM": 5,
+    "KNN": 3,
+    "XGB": 1
+  },
+  "xgb_backend": "sklearn HistGradientBoostingClassifier (xgboost not installed)",
+  "n_iter": 12,
+  "min_gain": 0.002,
+  "runtime_s": 110.3716893196106
+}
